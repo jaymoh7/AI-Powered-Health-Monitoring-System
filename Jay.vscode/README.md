@@ -23,6 +23,7 @@ An AI-driven web application that analyzes vital signs (heart rate, temperature,
 ---
 
 ## 🗂️ Project Structure
+
 AI Software Project/
 │
 ├── Jay.vscode/
@@ -40,6 +41,9 @@ AI Software Project/
 │
 └── README.md # Project documentation
 
+yaml
+Copy
+Edit
 
 ---
 
@@ -47,27 +51,28 @@ AI Software Project/
 
 ### 1. Clone the Project
 
-bash
+```bash
 git clone https://github.com/yourusername/health-monitoring-ai.git
 cd "AI Software Project"
-
-###2. Set Up Virtual Environment (Optional but Recommended)
-
+2. Set Up Virtual Environment (Optional but Recommended)
+bash
 python -m venv health_env
 .\health_env\Scripts\activate
-
-Install Dependencies
+3. Install Dependencies
+bash
+Copy
+Edit
 pip install -r requirements.txt
+If you don’t have a requirements.txt, here’s the minimum required:
 
-pip install -r requirements.txt
-
+bash
 pip install flask pandas scikit-learn
 4. Train the Model (optional if you already have health_model.pkl)
-
+bash
 cd Jay.vscode/api
 python train_model.py
-
 5. Run the Flask Server
+bash
 python app.py
 The server will run at: http://127.0.0.1:5000
 
@@ -89,13 +94,11 @@ Payload:
   "temperature": 36.6,
   "oxygen_level": 98
 }
-
 Response:
 
 {
   "result": "Alert: Abnormal signs detected"
 }
-
 🧠 ML Model
 Trained using synthetic logic or classification algorithm.
 
@@ -130,8 +133,3 @@ Add user authentication and health logs
 Mobile app version (React Native)
 
 Deployment to cloud (e.g., Render, Heroku, or AWS)
-
-
-Let me know if you'd like me to auto-generate the `requirements.txt`, deployment guide, or add links to your socials/portfolio.
-
-
