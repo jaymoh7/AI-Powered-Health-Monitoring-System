@@ -47,11 +47,11 @@ AI Software Project/
 
 ### 1. Clone the Project
 
-```bash
+bash
 git clone https://github.com/yourusername/health-monitoring-ai.git
 cd "AI Software Project"
 
-2. Set Up Virtual Environment (Optional but Recommended)
+###2. Set Up Virtual Environment (Optional but Recommended)
 
 python -m venv health_env
 .\health_env\Scripts\activate
