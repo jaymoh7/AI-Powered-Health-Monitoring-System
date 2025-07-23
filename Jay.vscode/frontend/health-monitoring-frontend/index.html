@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Health Monitoring System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AI-Powered Health Monitor</h1>
+    <form id="healthForm">
+      <label for="heartRate">Heart Rate:</label>
+      <input type="number" id="heartRate" name="heartRate" required />
+
+      <label for="temperature">Body Temperature (°C):</label>
+      <input type="number" step="0.1" id="temperature" name="temperature" required />
+
+      <label for="oxygenLevel">Oxygen Level (%):</label>
+      <input type="number" id="oxygenLevel" name="oxygenLevel" required />
+
+      <button type="submit">Check Health</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
